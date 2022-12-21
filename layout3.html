@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+    <style>
+        body{
+            margin: 0;
+            font-weight: bold;
+        }
+
+        nav{
+            color: white;
+            background-color: #C22177 ;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 150px;
+            height: 100vh;
+        }
+
+        .outer{
+            display: flex;
+            flex-grow: 1;
+
+        }
+
+        header{
+            color: white;
+            background-color: black;
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        
+        .inner{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .bottom-left{
+            display: flex;
+        }
+
+        .inner-middle{
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside{
+            color: white;
+            background-color: #320388 ;
+            flex-grow: 1;
+            padding-top: 20px;
+            padding-left: 20px;
+            height: calc(100vh - 120px);
+        }
+
+        .article{
+            flex-grow: 2;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 1100px;
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+
+        <nav>Nav</nav>
+
+        <div class="inner">
+            
+            <header>Header</header>
+
+            <div class="bottom-left">
+
+                <div class="inner-middle">
+                    <div class="article">Article</div>
+                    <footer>Footer</footer>
+                </div>
+                
+                <aside>Aside</aside>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

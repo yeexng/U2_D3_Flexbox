@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4 (Responsive)</title>
+    <style>
+        body{
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header{
+            color: white;
+            background-color: black;
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .middle{
+            display: flex;
+            height: calc(100vh - 115px);
+        }
+
+        .transition{
+            display: flex;
+            flex-grow: 1;
+        }
+
+        nav{
+            color: white;
+            background-color: #C22177 ;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 200px;
+        }
+
+        .article{
+            flex-grow: 1;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        aside{
+            color: white;
+            background-color: #320388 ;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 200px;
+        }
+
+        @media(max-width : 850px ){
+          .middle{
+            display: initial;
+            flex-grow: 1;
+          }
+
+          nav{
+            width: 107vh;
+            height: 5vh;
+          }
+
+          .transition{
+            height: calc(100vh - 200px);
+          }
+        }
+
+        @media(max-width : 400px){
+            .transition{
+                display: initial;
+            }
+
+            nav{
+                width:46.5vh;
+            }
+
+            aside{
+                height:5vh;
+                width: 46.5vh;
+            }
+
+            .article{
+                height: calc(100vh - 21vh - 100px);
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+
+        <header>Header</header>
+        
+        <div class="middle">
+            <nav>Nav</nav>
+            <div class="transition">
+                <div class="article">Article</div>
+                <aside>Aside</aside>
+
+            </div>
+        </div>
+
+        <footer>Footer</footer>
+    
+    </div>
+</body>
+</html>
