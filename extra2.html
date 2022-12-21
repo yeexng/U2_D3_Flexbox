@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra 2</title>
+
+    <style>
+        .outer{
+            display: flex;
+            border-radius: 50px;
+            overflow: hidden;
+            border: solid 3px;
+        }
+
+        .first-column{
+            height: 400px;
+            background-color: #88B46F;
+            text-align: center;
+            color: white;
+            flex-grow: 3;
+            border: solid 3px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .second-column{
+
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: #699AFC;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .third-column{
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+
+        .part1{
+            background-color: #FBF7C0;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .part2{
+            background-color:#F7ED73;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .part3{
+            background-color:#F4E43E;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        
+        <div class="first-column">First Column <br> Height 400px; <br> Green-ish background <br> Text Centered</div>
+
+        <div class="second-column">Second Column <br> Text to the Bottom <br> Bold,blueish <br> background</div>
+
+        <div class="third-column">
+
+            <div class="part1">Third Column Part1</div>
+            <div class="part2">Third Column Part2</div>
+            <div class="part3">Third Column Part3</div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
